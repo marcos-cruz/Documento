@@ -75,7 +75,7 @@ namespace Bigai.Documentos.Brasil
             }
 
             int digitoDeControleCalculado = CalcularDigitoDeControle();
-            int digitoDeControleInformado = ObterUltimoDigitoDeControleInformado();
+            int digitoDeControleInformado = ObterDigitoDeControleInformado();
 
             return digitoDeControleInformado == digitoDeControleCalculado;
         }
