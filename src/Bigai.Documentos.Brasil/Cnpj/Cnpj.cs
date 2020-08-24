@@ -1,5 +1,6 @@
 ﻿using Bigai.Documentos.Brasil.Generics;
 using Bigai.Documentos.Brasil.Helpers;
+using System;
 
 namespace Bigai.Documentos.Brasil
 {
@@ -121,5 +122,22 @@ namespace Bigai.Documentos.Brasil
 
         #endregion
 
+        #region Métodos Públicos
+
+        /// <summary>
+        /// Determina e aplica uma máscara de edição para o número do Cnpj.
+        /// </summary>
+        /// <returns>Retorna o número do Cnpj formatado com a máscara de edição.</returns>
+        public string ToCnpjFormat()
+        {
+            if (!CnpjEstaValido())
+            {
+                return NumeroDocumento;
+            }
+
+            return long.TryParse(NumeroDocumento.RemoverMascaraEdicao().Trim(), out long numero) ? Convert.ToUInt64(numero).ToString(@"00\.000\.000\/0000\-00") : "";
+        }
+
+        #endregion
     }
 }
