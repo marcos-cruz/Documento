@@ -65,5 +65,22 @@ namespace Bigai.Documentos.Brasil.Generics
         public abstract bool EstaValido();
 
         #endregion
+
+        #region Métodos Protegidos
+
+        protected int ObterUltimoDigitoDeControleInformado()
+        {
+            int digitoControleInformado = -1;
+
+            if (NumeroDocumento.Length > 0)
+            {
+                int posicao = NumeroDocumento.Length - 1;
+                digitoControleInformado = int.Parse(NumeroDocumento[posicao].ToString());
+            }
+
+            return digitoControleInformado;
+        }
+
+        #endregion
     }
 }
