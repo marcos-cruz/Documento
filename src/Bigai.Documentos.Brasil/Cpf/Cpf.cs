@@ -78,7 +78,7 @@ namespace Bigai.Documentos.Brasil
             }
 
             int[] digitoDeControleCalculado = CalcularDigitoDeControle();
-            int[] digitoDeControleInformado = ObterUltimosDoisDigitoDeControleInformado();
+            int[] digitoDeControleInformado = ObterUltimosDoisDigitoDeControleInformados();
 
             return digitoDeControleInformado[0] == digitoDeControleCalculado[0] &&
                    digitoDeControleInformado[1] == digitoDeControleCalculado[1];

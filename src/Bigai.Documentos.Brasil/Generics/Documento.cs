@@ -68,7 +68,7 @@ namespace Bigai.Documentos.Brasil.Generics
 
         #region Métodos Protegidos
 
-        protected int ObterUltimoDigitoDeControleInformado()
+        protected int ObterDigitoDeControleInformado()
         {
             int digitoControleInformado = -1;
 
@@ -81,7 +81,7 @@ namespace Bigai.Documentos.Brasil.Generics
             return digitoControleInformado;
         }
 
-        protected int[] ObterUltimosDoisDigitoDeControleInformado()
+        protected int[] ObterUltimosDoisDigitoDeControleInformados()
         {
             int[] digitoDeControleInformado = { -1, -1 };
 
