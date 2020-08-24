@@ -1,7 +1,8 @@
 ﻿using Bigai.Documentos.Brasil.Generics;
 using Bigai.Documentos.Brasil.Helpers;
+using System;
 
-namespace Bigai.Documentos.Brasil.Cpf
+namespace Bigai.Documentos.Brasil
 {
     /// <summary>
     /// Esta classe contém métodos para criar e validar um Cpf - Cadastro de Pessoas Físicas.
@@ -106,6 +107,24 @@ namespace Bigai.Documentos.Brasil.Cpf
             }
 
             return digitoVerificadorCalculado;
+        }
+
+        #endregion
+
+        #region Métodos Públicos
+
+        /// <summary>
+        /// Determina e aplica uma máscara de edição para o número do Cpf.
+        /// </summary>
+        /// <returns>Retorna o número do Cpf formatado com a máscara de edição.</returns>
+        public string ToCpfFormat()
+        {
+            if (!CpfEstaValido())
+            {
+                return NumeroDocumento;
+            }
+
+            return long.TryParse(NumeroDocumento.RemoverMascaraEdicao().Trim(), out long numero) ? Convert.ToUInt64(numero).ToString(@"000\.000\.000\-00") : "";
         }
 
         #endregion
