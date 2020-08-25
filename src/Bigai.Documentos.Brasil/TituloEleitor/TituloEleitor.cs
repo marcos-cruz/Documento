@@ -2,7 +2,7 @@
 using Bigai.Documentos.Brasil.Helpers;
 using System;
 
-namespace Bigai.Documentos.Brasil.TituloEleitor
+namespace Bigai.Documentos.Brasil
 {
     /// <summary>
     /// Esta classe contém métodos para criar e validar um Título de Eleitor.
