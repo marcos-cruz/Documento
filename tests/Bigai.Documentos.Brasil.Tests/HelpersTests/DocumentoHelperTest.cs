@@ -68,5 +68,50 @@ namespace Bigai.Documentos.Brasil.Tests.HelpersTests
             // Assert
             Assert.False(valorInformado.EhUmNumeroPositivo());
         }
+
+        [Theory]
+        [InlineData("SP")]
+        public void EhUmaUf_DeveReconhecerUmaUfBrasil_True(string valorInformado)
+        {
+            // Assert
+            Assert.True(valorInformado.EhUmaUf());
+        }
+
+        [Theory]
+        [InlineData("")]
+        [InlineData(null)]
+        [InlineData("sp")]
+        public void EhUmaUf_DeveReconhecerUmaUfBrasil_False(string valorInformado)
+        {
+            // Assert
+            Assert.False(valorInformado.EhUmaUf());
+        }
+
+        [Theory]
+        [InlineData("01", "SP")]
+        [InlineData("24", "AC")]
+        [InlineData("28", "28")]
+        public void ToDomicilioEleitoral_DeveRetornarUmaUfBrasil_True(string valorInformado, string valorEsperado)
+        {
+            // Act
+            string valorRetornado = valorInformado.ToDomicilioEleitoral();
+
+            // Assert
+            Assert.Equal(valorEsperado, valorRetornado);
+        }
+
+        [Theory]
+        [InlineData("", "")]
+        [InlineData(null, "")]
+        [InlineData("00", "")]
+        [InlineData("29", "")]
+        public void ToDomicilioEleitoral_DeveRetornarUmaUfBrasil_False(string valorInformado, string valorEsperado)
+        {
+            // Act
+            string valorRetornado = valorInformado.ToDomicilioEleitoral();
+
+            // Assert
+            Assert.Equal(valorEsperado, valorRetornado);
+        }
     }
 }
