@@ -72,5 +72,29 @@ namespace Bigai.Documentos.Brasil.Helpers
 
             return soma;
         }
+
+        /// <summary>
+        /// Determina a somatória resultante da multiplicação de cada digito de um número pelo peso correspondente,
+        /// iniciando da esquerda do número para a direita.
+        /// </summary>
+        /// <param name="numero">Representa o valor para o calculo do peso.</param>
+        /// <param name="pesoInicial">Representa o valor inicial do peso que será aplicado ao número.</param>
+        /// <param name="pesoMaximo">Representa o valor máximo que o peso pode assumir.</param>
+        /// <returns>Retorna a somatória resultante do peso multiplicado por cada digito do número.</returns>
+        internal static int AplicarPesoDaEsquerdaParaDireita(this string numero, int pesoInicial, int pesoMaximo)
+        {
+            int soma = 0,
+                peso = pesoInicial;
+
+            for (int i = 0, j = numero.Length; i < j; i++, peso++)
+            {
+                soma += int.Parse(numero[i].ToString()) * peso;
+
+                if (peso > pesoMaximo)
+                    peso = pesoInicial;
+            }
+
+            return soma;
+        }
     }
 }
