@@ -68,6 +68,10 @@ namespace Bigai.Documentos.Brasil.Generics
 
         #region Métodos Protegidos
 
+        /// <summary>
+        /// Determina o último digito do número do documento, como digito de controle informado.
+        /// </summary>
+        /// <returns>Retorna o último digito do número do documento.</returns>
         protected int ObterDigitoDeControleInformado()
         {
             int digitoControleInformado = -1;
@@ -81,6 +85,10 @@ namespace Bigai.Documentos.Brasil.Generics
             return digitoControleInformado;
         }
 
+        /// <summary>
+        /// Determina os dois últimos digitos do número do documento, como digitos de controle informados.
+        /// </summary>
+        /// <returns>Retorna os dois últimos digitos do número do documento.</returns>
         protected int[] ObterUltimosDoisDigitoDeControleInformados()
         {
             int[] digitoDeControleInformado = { -1, -1 };

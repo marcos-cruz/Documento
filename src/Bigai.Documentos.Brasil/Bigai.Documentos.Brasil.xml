@@ -149,6 +149,18 @@
             </summary>
             <returns>Retorna <c>true</c> se o documento estiver válido, caso contrário <c>false</c>.</returns>
         </member>
+        <member name="M:Bigai.Documentos.Brasil.Generics.Documento.ObterDigitoDeControleInformado">
+            <summary>
+            Determina o último digito do número do documento, como digito de controle informado.
+            </summary>
+            <returns>Retorna o último digito do número do documento.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Generics.Documento.ObterUltimosDoisDigitoDeControleInformados">
+            <summary>
+            Determina os dois últimos digitos do número do documento, como digitos de controle informados.
+            </summary>
+            <returns>Retorna os dois últimos digitos do número do documento.</returns>
+        </member>
         <member name="T:Bigai.Documentos.Brasil.Generics.ValueObject`1">
             <summary>
             <c>ValueObject</c> representa um objeto de valor genérico, com métodos para comparação e hascode.
