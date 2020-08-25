@@ -2,6 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Marcos Cruz, Bigai Consultoria Software</Authors>
+    <Copyright>Copyright © 2020 Bigai Consultoria Software.</Copyright>
+    <Company>Bigai Consultoria Software</Company>
+    <Description>Biblioteca de documentos emitidos no território Brasileiro.</Description>
+    <RepositoryUrl>https://github.com/marcos-cruz/Documento.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Cei Cnpj Cpf Inscricao Estadual Pis Titulo Eleitor</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\Projects\Bigai Software\Git\Documento\src\Bigai.Documentos.Brasil\Bigai.Documentos.Brasil.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>

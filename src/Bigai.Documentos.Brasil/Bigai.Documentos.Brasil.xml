@@ -1,0 +1,435 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bigai.Documentos.Brasil</name>
+    </assembly>
+    <members>
+        <member name="T:Bigai.Documentos.Brasil.Cei">
+            <summary>
+            Esta classe contém métodos para criar e validar um Cei - Cadastro Específico do INSS.
+            </summary>
+        </member>
+        <member name="F:Bigai.Documentos.Brasil.Cei.TamanhoCei">
+            <summary>
+            Tamanho máximo do número do Cei.
+            </summary>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Cei.#ctor">
+            <summary>
+            Retorna uma instância de <see cref="T:Bigai.Documentos.Brasil.Cei"/>.
+            </summary>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Cei.Factory(System.String)">
+            <summary>
+            Retorna uma instância de <see cref="T:Bigai.Documentos.Brasil.Cei"/>.
+            </summary>
+            <param name="numeroCei">Número do Cei, com ou sem máscara de edição.</param>
+            <returns>Retorna uma instância de <see cref="T:Bigai.Documentos.Brasil.Cei"/>.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Cei.EstaValido">
+            <summary>
+            Determina se o Cei é válido.
+            </summary>
+            <returns><c>true</c> se o número do Cei for válido, caso contrário <c>false</c>.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Cei.ToCeiFormat">
+            <summary>
+            Determina e aplica uma máscara de edição para o número do Cei.
+            </summary>
+            <returns>Retorna o número do Cei formatado com a máscara de edição.</returns>
+        </member>
+        <member name="T:Bigai.Documentos.Brasil.Cnpj">
+            <summary>
+            Esta classe contém métodos para criar e validar um Cnpj - Cadastro Nacional de Pessoas Jurídicas.
+            </summary>
+        </member>
+        <member name="F:Bigai.Documentos.Brasil.Cnpj.TamanhoCnpj">
+            <summary>
+            Tamanho máximo do número do Cnpj.
+            </summary>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Cnpj.#ctor">
+            <summary>
+            Retorna uma instância de <see cref="T:Bigai.Documentos.Brasil.Cnpj"/>.
+            </summary>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Cnpj.Factory(System.String)">
+            <summary>
+            Retorna uma instância de <see cref="T:Bigai.Documentos.Brasil.Cnpj"/>.
+            </summary>
+            <param name="numeroCnpj">Número do cnpj, com ou sem máscara de edição.</param>
+            <returns>Retorna uma instância de <see cref="T:Bigai.Documentos.Brasil.Cnpj"/>.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Cnpj.EstaValido">
+            <summary>
+            Determina se o Cnpj é válido.
+            </summary>
+            <returns><c>true</c> se o número do Cnpj for válido, caso contrário <c>false</c>.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Cnpj.ToCnpjFormat">
+            <summary>
+            Determina e aplica uma máscara de edição para o número do Cnpj.
+            </summary>
+            <returns>Retorna o número do Cnpj formatado com a máscara de edição.</returns>
+        </member>
+        <member name="T:Bigai.Documentos.Brasil.Cpf">
+            <summary>
+            Esta classe contém métodos para criar e validar um Cpf - Cadastro de Pessoas Físicas.
+            </summary>
+        </member>
+        <member name="F:Bigai.Documentos.Brasil.Cpf.TamanhoCpf">
+            <summary>
+            Tamanho máximo do número do Cpf.
+            </summary>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Cpf.#ctor">
+            <summary>
+            Retorna uma instância de <see cref="T:Bigai.Documentos.Brasil.Cpf"/>.
+            </summary>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Cpf.Factory(System.String)">
+            <summary>
+            Retorna uma instância de <see cref="T:Bigai.Documentos.Brasil.Cpf"/>.
+            </summary>
+            <param name="numeroCpf">Número do Cpf, com ou sem máscara de edição.</param>
+            <returns>Retorna uma instância de <see cref="T:Bigai.Documentos.Brasil.Cpf"/>.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Cpf.EstaValido">
+            <summary>
+            Determina se o Cpf é válido.
+            </summary>
+            <returns><c>true</c> se o número do Cpf for válido, caso contrário <c>false</c>.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Cpf.ToCpfFormat">
+            <summary>
+            Determina e aplica uma máscara de edição para o número do Cpf.
+            </summary>
+            <returns>Retorna o número do Cpf formatado com a máscara de edição.</returns>
+        </member>
+        <member name="T:Bigai.Documentos.Brasil.Generics.Documento">
+            <summary>
+            Esta classe é uma representação abstrata de um <see cref="T:Bigai.Documentos.Brasil.Generics.Documento"/>.
+            </summary>
+        </member>
+        <member name="F:Bigai.Documentos.Brasil.Generics.Documento.TamanhoNumeroDocumento">
+            <summary>
+            Tamanho máximo do número do documento.
+            </summary>
+        </member>
+        <member name="F:Bigai.Documentos.Brasil.Generics.Documento.TamanhoEstadoEmissor">
+            <summary>
+            Tamanho máximo do estado emissor.
+            </summary>
+        </member>
+        <member name="P:Bigai.Documentos.Brasil.Generics.Documento.NumeroDocumento">
+            <summary>
+            Representa o número de um documento.
+            </summary>
+        </member>
+        <member name="P:Bigai.Documentos.Brasil.Generics.Documento.EstadoEmissor">
+            <summary>
+            Sigla do estado emissor composta por 2 letras, segundo a norma ISO-3166.
+            </summary>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Generics.Documento.#ctor">
+            <summary>
+            Retorna uma instância de <see cref="T:Bigai.Documentos.Brasil.Generics.Documento"/>.
+            </summary>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Generics.Documento.#ctor(System.String,System.String)">
+            <summary>
+            Retorna uma instância de <see cref="T:Bigai.Documentos.Brasil.Generics.Documento"/>.
+            </summary>
+            <param name="numeroDocumento">Número do documento, com ou sem máscara de edição.</param>
+            <param name="estadoEmissor">Sigla do estado emissor composta por 2 letras.</param>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Generics.Documento.EstaValido">
+            <summary>
+            Determina se um documento está preenchido com informações válidas.
+            </summary>
+            <returns>Retorna <c>true</c> se o documento estiver válido, caso contrário <c>false</c>.</returns>
+        </member>
+        <member name="T:Bigai.Documentos.Brasil.Generics.ValueObject`1">
+            <summary>
+            <c>ValueObject</c> representa um objeto de valor genérico, com métodos para comparação e hascode.
+            </summary>
+            <typeparam name="TObject">Classe que representa um objeto de valor.</typeparam>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Generics.ValueObject`1.#ctor">
+            <summary>
+            Construtor default.
+            </summary>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Generics.ValueObject`1.Equals(System.Object)">
+            <summary>
+            Determina se o objeto especificado no parâmetro é igual ao objeto corrente.
+            </summary>
+            <param name="obj">Objeto de valor para ser comparado com o objeto de valor corrente.</param>
+            <returns>Retorna <c>true</c> se o objeto especificado no parâmetro for igual ao objeto corrente, caso contrário <c>false</c>.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Generics.ValueObject`1.EqualsCore(`0)">
+            <summary>
+            Determina se o objeto especificado no parâmetro é igual ao objeto corrente, através da comparação específica 
+            implementada pela classe que herda de <see cref="T:Bigai.Documentos.Brasil.Generics.ValueObject`1"/> e implementa a comparação core.
+            </summary>
+            <param name="obj">Objeto de valor para ser comparado com o objeto de valor corrente.</param>
+            <returns>Retorna <c>true</c> se o objeto especificado no parâmetro for igual ao objeto corrente, caso contrário <c>false</c>.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Generics.ValueObject`1.GetHashCode">
+            <summary>
+            Obtém um hash code para o objeto de valor corrente.
+            </summary>
+            <returns>Retorna um hash code para o objeto de valor corrente.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Generics.ValueObject`1.GetHashCodeFromProperties">
+            <summary>
+            Obtém um hash code das propriedades públicas do objeto corrente.
+            </summary>
+            <returns>Retorna um hash code para as propriedades do objeto de valor corrente.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Generics.ValueObject`1.GethashCodeFromFields">
+            <summary>
+            Obtém um hash code dos campos públicos do objeto corrente.
+            </summary>
+            <returns>Retorna um hash code para os campos do objeto de valor corrente.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Generics.ValueObject`1.HashValue(System.Int32,System.Object)">
+            <summary>
+            Obtém um hash code para um objeto valor.
+            </summary>
+            <param name="semente">Valor para ser aplicado na geração do hash code.</param>
+            <param name="valor">Valor para ser calculado o hash code.</param>
+            <returns>Retorna um hash code para o objeto de valor corrente.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Generics.ValueObject`1.op_Equality(Bigai.Documentos.Brasil.Generics.ValueObject{`0},Bigai.Documentos.Brasil.Generics.ValueObject{`0})">
+            <summary>
+            Determina se dois objetos de valores são iguais.
+            </summary>
+            <param name="objA">Objeto de valor para comparação.</param>
+            <param name="objB">Objeto de valor para comparação.</param>
+            <returns>Retorna <c>true</c> se os objetos de valor forem iguais, caso contrário <c>false</c>.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Generics.ValueObject`1.op_Inequality(Bigai.Documentos.Brasil.Generics.ValueObject{`0},Bigai.Documentos.Brasil.Generics.ValueObject{`0})">
+            <summary>
+            Determina se dois objetos de valores são diferentes.
+            </summary>
+            <param name="objA">Objeto de valor para comparação.</param>
+            <param name="objB">Objeto de valor para comparação.</param>
+            <returns>Retorna <c>true</c> se os objetos de valor forem diferentes, caso contrário <c>false</c>.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Helpers.DocumentoHelper.RemoverMascaraEdicao(System.String)">
+            <summary>
+            Remove os caracteres '.', '-' e '/' utilizados na edição de um documento.
+            </summary>
+            <param name="valor">Representa o valor para remover os caracteres de edição.</param>
+            <returns>Retorna o valor sem os caracteres de edição.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Helpers.DocumentoHelper.TemCaracterRepetido(System.String)">
+            <summary>
+            Determina se uma variável foi preenchida com o mesmo caracter, por exemplo, 1111111 ou aaaaaaa.
+            </summary>
+            <param name="valor">Representa o valor que será verificado o preenchimento.</param>
+            <returns>Retorna <c>true</c> se estiver preenchido com caracteres repetidos, caso contrário <c>false</c>.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Helpers.DocumentoHelper.EhUmNumeroPositivo(System.String)">
+            <summary>
+            Determina se uma string esta preenchida somente com digitos de 0 a 9.
+            </summary>
+            <param name="valor">Representa o valor que será verificado o preenchimento.</param>
+            <returns>Retorna <c>true</c> se estiver preenchida somente com números, caso contrário <c>false</c>.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Helpers.DocumentoHelper.EhUmaUf(System.String)">
+            <summary>
+            Determina se uma sigla pertence corresponde a sigla de um estado brasileiro.
+            </summary>
+            <param name="uf">Sigla do estado composta por 2 letras, segundo a norma ISO-3166.</param>
+            <returns>Retorna <c>true</c> se a sigla pertencer a um estado brasileiro, caso contrário <c>false</c>.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Helpers.DocumentoHelper.ToDomicilioEleitoral(System.String)">
+            <summary>
+            Determina a sigla do estado que corresponde ao código do domicilio eleitoral.
+            </summary>
+            <param name="codigoDomicilioEleitoral">Código do domicilio eleitoral.</param>
+            <returns>Retorna a sigla do estado composta por 2 letras, segundo a norma ISO-3166, se o domicilio pertencer
+            a um estado no território nacional, caso contrário o próprio código de domício eleitoral.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Helpers.PesoHelper.AplicarPesoDaDireitaParaEsquerda(System.String,System.Int32,System.Int32)">
+            <summary>
+            Determina a somatória resultante da multiplicação de cada digito de um número pelo peso correspondente,
+            iniciando da direita do número para a esquerda.
+            </summary>
+            <param name="numero">Representa o valor para o calculo do peso, sem máscara de edição.</param>
+            <param name="pesoInicial">Representa o valor inicial do peso que será aplicado ao número.</param>
+            <param name="pesoMaximo">Representa o valor máximo que o peso pode assumir.</param>
+            <returns>Retorna a somatória resultante do peso multiplicado por cada digito do número.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Helpers.PesoHelper.AplicarPesoDaDireitaParaEsquerda(System.String,System.Int32[])">
+            <summary>
+            Determina a somatória resultante da multiplicação de cada digito de um número pelo peso correspondente,
+            iniciando da direita do número para a esquerda.
+            </summary>
+            <param name="numero">Representa o valor para o calculo do peso.</param>
+            <param name="peso">Representa um array com os valores dos pesos que serão aplicados a cada digito do número.</param>
+            <returns>Retorna a somatória resultante do peso multiplicado por cada digito do número.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Helpers.PesoHelper.AplicarPesoDaEsquerdaParaDireita(System.String,System.Int32[])">
+            <summary>
+            Determina a somatória resultante da multiplicação de cada digito de um número pelo peso correspondente,
+            iniciando da esquerda do número para a direita.
+            </summary>
+            <param name="numero">Representa o valor para o calculo do peso.</param>
+            <param name="peso">Representa um array com os valores dos pesos que serão aplicados a cada digito do número.</param>
+            <returns>Retorna a somatória resultante do peso multiplicado por cada digito do número.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Helpers.PesoHelper.AplicarPesoDaEsquerdaParaDireita(System.String,System.Int32,System.Int32)">
+            <summary>
+            Determina a somatória resultante da multiplicação de cada digito de um número pelo peso correspondente,
+            iniciando da esquerda do número para a direita.
+            </summary>
+            <param name="numero">Representa o valor para o calculo do peso.</param>
+            <param name="pesoInicial">Representa o valor inicial do peso que será aplicado ao número.</param>
+            <param name="pesoMaximo">Representa o valor máximo que o peso pode assumir.</param>
+            <returns>Retorna a somatória resultante do peso multiplicado por cada digito do número.</returns>
+        </member>
+        <member name="T:Bigai.Documentos.Brasil.InscricaoEstadual">
+            <summary>
+            Esta classe contém métodos para criar e validar uma Inscrição Estadual.
+            </summary>
+        </member>
+        <member name="F:Bigai.Documentos.Brasil.InscricaoEstadual.TamanhoInscricaoEstadual">
+            <summary>
+            Tamanho máximo do número da Inscrição Estadual.
+            </summary>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.InscricaoEstadual.#ctor">
+            <summary>
+            Retorna uma instância de <see cref="T:Bigai.Documentos.Brasil.InscricaoEstadual"/>.
+            </summary>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.InscricaoEstadual.Factory(System.String,System.String)">
+            <summary>
+            Retorna uma instância de <see cref="T:Bigai.Documentos.Brasil.InscricaoEstadual"/>.
+            </summary>
+            <param name="numeroInscricaoEstadual">Número da inscrição estadual, com ou sem máscara de edição.</param>
+            <param name="estadoEmissorInscricaoEstadual">Sigla do estado emissor composta por 2 letras, segundo a norma ISO-3166.</param>
+            <returns>Retorna uma instância de <see cref="T:Bigai.Documentos.Brasil.InscricaoEstadual"/>.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.InscricaoEstadual.EstaValido">
+            <summary>
+            Determina se a Inscrição Estadual é válida.
+            </summary>
+            <returns><c>true</c> se o número da Inscrição Estadual for válido, caso contrário <c>false</c>.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.InscricaoEstadual.ToInscricaoEstadualFormat">
+            <summary>
+            Determina e aplica uma máscara de edição para o número da inscrição estadual, conforme o estado emissor.
+            </summary>
+            <returns>Retorna o número da inscrição estadual formatado com a máscara de edição.</returns>
+        </member>
+        <member name="T:Bigai.Documentos.Brasil.Interfaces.IDocumento">
+            <summary>
+            <see cref="T:Bigai.Documentos.Brasil.Interfaces.IDocumento"/> representa um contrato para manipulação de um documento.
+            </summary>
+        </member>
+        <member name="P:Bigai.Documentos.Brasil.Interfaces.IDocumento.NumeroDocumento">
+            <summary>
+            Representa o número de um documento.
+            </summary>
+        </member>
+        <member name="P:Bigai.Documentos.Brasil.Interfaces.IDocumento.EstadoEmissor">
+            <summary>
+            Sigla do estado emissor composta por 2 letras, segundo a norma ISO-3166.
+            </summary>
+        </member>
+        <member name="T:Bigai.Documentos.Brasil.Pis">
+            <summary>
+            Esta classe contém métodos para criar e validar um Pis - Programa de Integração Social.
+            </summary>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Pis.#ctor">
+            <summary>
+            Retorna uma instância de <see cref="T:Bigai.Documentos.Brasil.Pis"/>.
+            </summary>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Pis.Factory(System.String)">
+            <summary>
+            Retorna uma instância de <see cref="T:Bigai.Documentos.Brasil.Pis"/>.
+            </summary>
+            <param name="numeroPis">Número do Pis, com ou sem máscara de edição.</param>
+            <returns>Retorna uma instância de <see cref="T:Bigai.Documentos.Brasil.Pis"/>.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Pis.EstaValido">
+            <summary>
+            Determina se o Pis é válido.
+            </summary>
+            <returns><c>true</c> se o número do Pis for válido, caso contrário <c>false</c>.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.Pis.ToPisFormat">
+            <summary>
+            Determina e aplica uma máscara de edição para o número do Pis.
+            </summary>
+            <returns>Retorna o número do Pis formatado com a máscara de edição.</returns>
+        </member>
+        <member name="T:Bigai.Documentos.Brasil.TituloEleitor">
+            <summary>
+            Esta classe contém métodos para criar e validar um Título de Eleitor.
+            </summary>
+        </member>
+        <member name="F:Bigai.Documentos.Brasil.TituloEleitor.TamanhoTituloEleitor">
+            <summary>
+            Tamanho máximo do número do título do eleitor.
+            </summary>
+        </member>
+        <member name="F:Bigai.Documentos.Brasil.TituloEleitor.TamanhoZonaEleitoral">
+            <summary>
+            Tamanho máximo do número da zona eleitoral.
+            </summary>
+        </member>
+        <member name="F:Bigai.Documentos.Brasil.TituloEleitor.TamanhoSecaoEleitoral">
+            <summary>
+            Tamanho máximo do número da seção eleitorial.
+            </summary>
+        </member>
+        <member name="P:Bigai.Documentos.Brasil.TituloEleitor.ZonaEleitoral">
+            <summary>
+            Representa o número da zona eleitoral.
+            </summary>
+        </member>
+        <member name="P:Bigai.Documentos.Brasil.TituloEleitor.SecaoEleitoral">
+            <summary>
+            Representa o número da seção eleitoral.
+            </summary>
+        </member>
+        <member name="P:Bigai.Documentos.Brasil.TituloEleitor.DomicilioEleitoral">
+            <summary>
+            Representa o código do domicilio eleitoral, onde o título do eletor foi expedido.
+            </summary>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.TituloEleitor.#ctor">
+            <summary>
+            Retorna uma instância de <see cref="T:Bigai.Documentos.Brasil.TituloEleitor"/>.
+            </summary>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.TituloEleitor.Factory(System.String,System.String,System.String)">
+            <summary>
+            Retorna uma instância de <see cref="T:Bigai.Documentos.Brasil.TituloEleitor"/>.
+            </summary>
+            <param name="numeroTitulo">Número do título de eleitor, com ou sem máscara de edição.</param>
+            <param name="zonaEleitoral">Número da zona eleitoral, com ou sem máscara de edição.</param>
+            <param name="secaoEleitoral">Número da seção eleitoral, com ou sem máscara de edição.</param>
+            <returns>Retorna uma instância de <see cref="T:Bigai.Documentos.Brasil.TituloEleitor"/>.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.TituloEleitor.EstaValido">
+            <summary>
+            Determina se o Título de eleitor é válido.
+            </summary>
+            <returns><c>true</c> se o número do Cpf for válido, caso contrário <c>false</c>.</returns>
+        </member>
+        <member name="M:Bigai.Documentos.Brasil.TituloEleitor.ToTituloEleitorFormat">
+            <summary>
+            Determina e aplica uma máscara de edição para o número do título de eleitor.
+            </summary>
+            <returns>Retorna o número do título de eleitor formatado com a máscara de edição.</returns>
+        </member>
+    </members>
+</doc>
