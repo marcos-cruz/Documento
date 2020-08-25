@@ -7,7 +7,7 @@ namespace Bigai.Documentos.Brasil.Helpers
     {
         internal static string[] estadosBrasileiros = { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" };
         internal static string[] domicilioEleitoral = { "24", "17", "25", "22", "05", "07", "20", "14", "10", "11", "18", "19", "02", "13", "12", "06", "08", "15", "03", "16", "04", "23", "26", "09", "01", "21", "27" };
-        
+
         /// <summary>
         /// Remove os caracteres '.', '-' e '/' utilizados na edição de um documento.
         /// </summary>
@@ -96,14 +96,19 @@ namespace Bigai.Documentos.Brasil.Helpers
         {
             string ufDomicilioEleitoral = codigoDomicilioEleitoral;
 
-            if (!string.IsNullOrEmpty(codigoDomicilioEleitoral))
+            if (codigoDomicilioEleitoral != "28")
             {
-                for (int i = 0, j = domicilioEleitoral.Length; i < j; i++)
+                ufDomicilioEleitoral = "";
+
+                if (!string.IsNullOrEmpty(codigoDomicilioEleitoral))
                 {
-                    if (codigoDomicilioEleitoral == domicilioEleitoral[i])
+                    for (int i = 0, j = domicilioEleitoral.Length; i < j; i++)
                     {
-                        ufDomicilioEleitoral = estadosBrasileiros[i];
-                        i = j;
+                        if (codigoDomicilioEleitoral == domicilioEleitoral[i])
+                        {
+                            ufDomicilioEleitoral = estadosBrasileiros[i];
+                            i = j;
+                        }
                     }
                 }
             }
