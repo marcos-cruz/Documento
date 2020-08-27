@@ -2,13 +2,13 @@ name: CI - Build and Tests
 
 #
 # Controla quando a Action será disparada. Neste caso é disparado quando ocorre um
-# push ou pull request na branch develop
+# push ou pull request em qualquer branch.
 #
 on:
   push:
-    branches: [ develop ]
+ #  branches: [ develop ]
   pull_request:
-    branches: [ develop ]
+ #  branches: [ develop ]
 
 jobs:
   #
