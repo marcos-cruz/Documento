@@ -2,6 +2,8 @@
 
 Biblioteca de documentos emitidos no território Brasileiro.
 
+![CI - Build and Tests](https://github.com/marcos-cruz/Documento/workflows/CI%20-%20Build%20and%20Tests/badge.svg)
+
 # Objetivo
 
 Disponibilizar uma biblioteca que facilite a criação e utilização de documentos como por exemplo, CPF e CNPJ, em projetos dotnet C#.
