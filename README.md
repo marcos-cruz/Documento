@@ -2,7 +2,12 @@
 
 Biblioteca de documentos emitidos no território Brasileiro.
 
-![CI - Build and Tests](https://github.com/marcos-cruz/Documento/workflows/CI%20-%20Build%20and%20Tests/badge.svg)
+# Índice
+
+- [Objetivo](#objetivo)
+- [Documentos Suportados](#documentos-suportados)
+- [Instalação](#instalação)
+- [Utilização](#utilização)
 
 # Objetivo
 
