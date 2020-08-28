@@ -2,6 +2,9 @@
 
 Biblioteca de documentos emitidos no território Brasileiro.
 
+![CI - Build](https://github.com/marcos-cruz/Documento/workflows/CI%20-%20Build/badge.svg)
+![CI - Tests](https://github.com/marcos-cruz/Documento/workflows/CI%20-%20Tests/badge.svg)
+
 # Índice
 
 - [Objetivo](#objetivo)
